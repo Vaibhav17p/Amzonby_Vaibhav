@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [SuiteAmazon]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="BroW" value="Edge"/>
+    <classes>
+      <class name="testClasses.VerifyHeadersTESTnGAmazon">
+        <methods>
+          <include name="browerClose"/>
+          <include name="objectsOfPoM"/>
+          <include name="clearObjects"/>
+          <include name="loGOut"/>
+          <include name="test3_LangCheck"/>
+          <include name="browserLaunch"/>
+          <include name="apploginmethod"/>
+        </methods>
+      </class> <!-- testClasses.VerifyHeadersTESTnGAmazon -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="BroW" value="Chrome"/>
+    <classes>
+      <class name="testClasses.VerifyHeadersTESTnGAmazon">
+        <methods>
+          <include name="browerClose"/>
+          <include name="objectsOfPoM"/>
+          <include name="clearObjects"/>
+          <include name="loGOut"/>
+          <include name="test3_LangCheck"/>
+          <include name="browserLaunch"/>
+          <include name="apploginmethod"/>
+        </methods>
+      </class> <!-- testClasses.VerifyHeadersTESTnGAmazon -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [SuiteAmazon] -->
